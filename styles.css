@@ -1,10 +1,10 @@
 body {
-  background-image: url(#);
+  background-image: url("./clouds.jpg");
   max-width: 100%;
   height: 100%;
   background-repeat: no-repeat;
-  background-size: contain;
-  text-align: left;
+  background-size: cover;
+  background-attachment: scroll;
   font-style: normal;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
@@ -14,14 +14,13 @@ header {
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
-  text-align: justify;
+  text-align: center;
 }
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 20px;
-  display: inline-block;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -61,10 +60,13 @@ h1 {
   text-align: center;
 }
 
+.title {
+  text-align: left;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     flex-direction: column;
-    text-align: center;
   }
   .list {
     visibility: hidden;
@@ -73,25 +75,50 @@ h1 {
     display: block;
     text-align: center;
   }
+  .title {
+    display: block;
+    text-align: left;
+  }
+  .about {
+    display: block;
+    flex-direction: column;
+  }
+  .image {
+    display: block;
+    margin: auto;
+  }
+  .contact {
+    display: block;
+    margin: auto;
+    border: none;
+  }
 }
-/*section.about {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: justify;
-    flex-basis: 300px;
+.about {
+  box-sizing: border-box;
+  width: 100%;
+  float: left;
+  gap: 10px;
+}
+.about .text {
+  display: block;
+  float: inline-start;
+}
 
-}*/
 .image {
-  display: flex;
-  justify-content: space-around;
-  flex-basis: 300px;
+  float: right;
+  max-width: 300px;
+  height: auto;
 }
 
-.p {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-evenly;
-  padding: 1em;
+.text {
+  width: 700px;
+  align-content: flex-end;
+  align-items: flex-start;
+}
+
+.contact {
+  display: block;
+  margin: auto;
+  background-color: transparent;
+  border: none;
 }

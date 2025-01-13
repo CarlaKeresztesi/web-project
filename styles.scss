@@ -1,25 +1,24 @@
 body {
-    background-image: url(#);
+    background-image: url('./clouds.jpg') ;
     max-width: 100%;//*STOPS THE OVERFLOW/
     height: 100%;//*or auto/
     background-repeat: no-repeat;
-    background-size: contain; //*or cover here/
-    text-align: left;
+    background-size: cover; 
+    background-attachment: scroll; //*for the image to scroll with rest of page/
     font-style: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-between;//*spaced evenly, 1st item at start, last at end/
     list-style-type: none;
-    text-align: justify;
+    text-align: center;
 }
 ul {
     list-style-type: none;
     margin: 0;
     padding: 20px;
-    display: inline-block;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -57,13 +56,14 @@ a:active {
 h1 {
     text-align: center;
 }
-//*mobile friendly version details/
+.title {
+    text-align: left;
+}
+//*mobile friendly version /
 @media only screen and (max-width: 600px) {
     body {
         flex-direction: column;
-        text-align: center;
         }
-    //font-size:? /  
     .list {
         visibility: hidden;
     }
@@ -71,26 +71,87 @@ h1 {
         display: block;
         text-align: center;
     }
+    .title {
+        display: block;
+        text-align: left;
+    }
+    .about {
+       display: block;
+       flex-direction: column;
+    } 
+    .image {
+        display: block;
+        margin: auto;
+    }
+    .contact {
+        display: block;
+        margin: auto;//*with the block disp prop above, centers the button/
+        border: none;
+    }
 }
-/*section.about {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    text-align: justify;
-    flex-basis: 300px;
-    
-}*/
+@media only screen and (min-width: 600px) and (max-width:768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .list {
+        visibility: hidden;
+    }
+
+    header {
+        display: block;
+        text-align: center;
+    }
+
+    .title {
+        display: block;
+        text-align: left;
+    }
+
+    .about {
+        display: block;
+        flex-direction: column;
+    }
+
+    .image {
+        display: block;
+        margin: auto;
+    }
+
+    .contact {
+        display: block;
+        margin: auto; //*with the block disp prop above, centers the button/
+        border: none;
+    }
+}
+//* end of media properties/  
+.about {
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    .text {
+        display: block;
+        float: inline-start;//*sets the image at the end of text/
+      //*  align-items: stretch;/
+        }
+    gap: 10px;
+}
 .image {
-    display: flex;
-    justify-content: space-around;
-    flex-basis: 300px;
-   //* align-items: flex-end;/
+    float: right;
+    max-width: 300px;
+    height: auto;
 }
-.p {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-evenly;
-    padding: 1em;
+.text {
+    width: 700px;
+    align-content: flex-end;
+    align-items: flex-start;
 }
 
+
+
+.contact {
+    display: block;
+    margin: auto; //* centers content within contact/
+    background-color: transparent;
+    border: none;
+}

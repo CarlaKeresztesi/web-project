@@ -1,8 +1,8 @@
 body {
-  background-image: url("./clouds.jpg");
+  background-image: url("./images/clouds.jpg");
   max-width: 100%;
   height: 100%;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   background-attachment: scroll;
   font-style: normal;
@@ -83,7 +83,7 @@ h1 {
     display: block;
     flex-direction: column;
   }
-  .image {
+  .imageCarla {
     display: block;
     margin: auto;
   }
@@ -92,19 +92,22 @@ h1 {
     margin: auto;
     border: none;
   }
+  .technical {
+    display: none;
+  }
 }
 .about {
   box-sizing: border-box;
   width: 100%;
   float: left;
-  gap: 10px;
 }
 .about .text {
   display: block;
   float: inline-start;
+  align-items: stretch;
 }
 
-.image {
+.imageCarla {
   float: right;
   max-width: 300px;
   height: auto;
@@ -114,6 +117,34 @@ h1 {
   width: 700px;
   align-content: flex-end;
   align-items: flex-start;
+}
+
+.technical {
+  text-align: left;
+}
+.technical__icon {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+@media only screen and (min-width: 601px) {
+  .technical__icon {
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.technical__dim {
+  height: 60px;
+  float: left;
+}
+.technical__caption {
+  display: flex;
+  justify-content: center;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 20px;
 }
 
 .contact {

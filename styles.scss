@@ -1,5 +1,5 @@
 body {
-    background-image: url('./clouds.jpg') ;
+    background-image: url('./images/clouds.jpg');
     max-width: 100%;//*STOPS THE OVERFLOW/
     height: 100%;//*or auto/
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@ ul li {
     display: flex; 
     justify-content: space-between;
 }
-//*below to remove hyperlink in lists*/
+//*removing hyperlink in lists*/
 a:link {
     color: inherit;
     text-decoration: none;
@@ -79,7 +79,7 @@ h1 {
        display: block;
        flex-direction: column;
     } 
-    .image {
+    .imageCarla {
         display: block;
         margin: auto;
     }
@@ -88,40 +88,8 @@ h1 {
         margin: auto;//*with the block disp prop above, centers the button/
         border: none;
     }
-}
-@media only screen and (min-width: 600px) and (max-width:768px) {
-    body {
-        flex-direction: column;
-    }
-
-    .list {
-        visibility: hidden;
-    }
-
-    header {
-        display: block;
-        text-align: center;
-    }
-
-    .title {
-        display: block;
-        text-align: left;
-    }
-
-    .about {
-        display: block;
-        flex-direction: column;
-    }
-
-    .image {
-        display: block;
-        margin: auto;
-    }
-
-    .contact {
-        display: block;
-        margin: auto; //*with the block disp prop above, centers the button/
-        border: none;
+    .technical {
+        display: none;
     }
 }
 //* end of media properties/  
@@ -132,22 +100,45 @@ h1 {
     .text {
         display: block;
         float: inline-start;//*sets the image at the end of text/
-      //*  align-items: stretch;/
+        align-items: stretch;
         }
-    gap: 10px;
+    
 }
-.image {
+.imageCarla {
     float: right;
     max-width: 300px;
     height: auto;
-}
+ }
 .text {
     width: 700px;
     align-content: flex-end;
     align-items: flex-start;
 }
-
-
+.technical {
+    text-align: left;
+    &__icon {
+        float: left;
+        width: 20%;
+        padding: 5px;
+        // @media only screen and (min-width: 601px) {
+        //     justify-content: space-around;
+        //     margin-left: 20px;
+        //     margin-right: 20px;
+        // }
+    }
+    &__dim {
+        height: 60px;
+        float: left;
+    }
+    &__caption {
+        display: flex;
+        justify-content: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 20px;
+    }
+}
 
 .contact {
     display: block;

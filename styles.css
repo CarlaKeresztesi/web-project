@@ -131,6 +131,9 @@ a:active {
   }
 }
 @media only screen and (min-width: 601px) {
+  body {
+    padding: 60px;
+  }
   .title {
     display: block;
     text-align: left;
@@ -146,9 +149,12 @@ a:active {
   }
   .about {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 1300px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: stretch;
+    max-width: 2000px;
     padding-bottom: 60px;
+    padding-top: 60px;
   }
   .about__heading {
     padding-right: 10px;
@@ -157,18 +163,23 @@ a:active {
     font-family: Georgia;
     font-size: 35px;
   }
+  .about__text {
+    width: 1100px;
+    align-content: flex-end;
+    padding-left: 5px;
+    padding-top: 60px;
+    float: left;
+    order: 1;
+    font-size: 17px;
+  }
   .about__image {
-    display: flex;
-    place-content: right;
     max-height: 900px;
     max-width: 200px;
-  }
-  .about__text {
-    width: 1400px;
-    align-content: flex-end;
-    align-items: flex-start;
-    padding-left: 30px;
-    border-top: 30px;
+    float: right;
+    padding-top: 130px;
+    padding-left: 100px;
+    padding-right: 100px;
+    order: 2;
   }
   .technical {
     text-align: center;
@@ -184,10 +195,6 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-  }
-  .skills__icon .__dim {
-    width: 30px;
-    float: left;
   }
   .projects__heading {
     padding-right: 10px;

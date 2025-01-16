@@ -2,7 +2,7 @@ body {
   background-image: url("./images/clouds.jpg");
   max-width: 100%;
   height: 100%;
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
   font-style: normal;
@@ -15,6 +15,9 @@ header {
   justify-content: space-between;
   list-style-type: none;
   text-align: center;
+  font-family: Georgia;
+  font-weight: 300;
+  font-size: 25px;
 }
 
 ul {
@@ -56,14 +59,6 @@ a:active {
   text-decoration: none;
 }
 
-h1 {
-  text-align: center;
-}
-
-.title {
-  text-align: left;
-}
-
 @media only screen and (max-width: 600px) {
   body {
     flex-direction: column;
@@ -78,78 +73,124 @@ h1 {
   .title {
     display: block;
     text-align: left;
+    padding-left: 25px;
+  }
+  .title__text {
+    text-align: center;
+    font-weight: 100;
+    font-size: 80px;
+    text-align: left;
+    padding-left: 20px;
   }
   .about {
     display: block;
-    flex-direction: column;
+    text-align: left;
+    padding-left: 25px;
+    place-items: center;
   }
-  .imageCarla {
-    display: block;
-    margin: auto;
+  .about > .about__image:first-child {
+    padding-top: 0;
+  }
+  .about__heading {
+    font-family: Georgia, serif;
+    font-size: 30px;
+  }
+  .about__image {
+    place-items: center;
+  }
+  .projects__heading {
+    font-family: Georgia, serif;
+    font-size: 30px;
   }
   .contact {
     display: block;
     margin: auto;
+    background-color: transparent;
     border: none;
+  }
+  .contact__text {
+    text-align: center;
   }
   .technical {
     display: none;
   }
 }
-.about {
-  box-sizing: border-box;
-  width: 100%;
-  float: left;
-}
-.about .text {
-  display: block;
-  float: inline-start;
-  align-items: stretch;
-}
-
-.imageCarla {
-  float: right;
-  max-width: 300px;
-  height: auto;
-}
-
-.text {
-  width: 700px;
-  align-content: flex-end;
-  align-items: flex-start;
-}
-
-.technical {
-  text-align: left;
-}
-.technical__icon {
-  float: left;
-  width: 20%;
-  padding: 5px;
-}
 @media only screen and (min-width: 601px) {
-  .technical__icon {
-    justify-content: space-around;
-    margin-left: 20px;
-    margin-right: 20px;
+  .title {
+    display: block;
+    text-align: left;
+    max-width: 1200px;
+    padding-bottom: 60px;
+    padding-left: 350px;
   }
-}
-.technical__dim {
-  height: 60px;
-  float: left;
-}
-.technical__caption {
-  display: flex;
-  justify-content: center;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 20px;
-}
-
-.contact {
-  display: block;
-  margin: auto;
-  background-color: transparent;
-  border: none;
+  .title__text {
+    text-align: center;
+    font-weight: 900;
+    font-size: 80px;
+    font-family: Georgia, serif;
+  }
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    padding-bottom: 60px;
+  }
+  .about__heading {
+    padding-right: 10px;
+    width: 60px;
+    padding-bottom: 10px;
+    font-family: Georgia;
+    font-size: 35px;
+  }
+  .about__image {
+    display: flex;
+    place-content: right;
+    max-height: 900px;
+    max-width: 200px;
+  }
+  .about__text {
+    width: 1400px;
+    align-content: flex-end;
+    align-items: flex-start;
+    padding-left: 30px;
+    border-top: 30px;
+  }
+  .technical {
+    text-align: center;
+  }
+  .technical__skills {
+    padding-right: 10px;
+    width: 60px;
+    padding-bottom: 10px;
+    font-family: Georgia;
+    font-size: 35px;
+  }
+  .skills__icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .skills__icon .__dim {
+    width: 30px;
+    float: left;
+  }
+  .projects__heading {
+    padding-right: 10px;
+    width: 60px;
+    padding-bottom: 10px;
+    font-family: Georgia;
+    font-size: 35px;
+  }
+  .contact__text {
+    text-align: center;
+    padding-right: 10px;
+    font-family: Georgia;
+    font-size: 35px;
+  }
+  .contact {
+    display: block;
+    margin: auto;
+    background-color: transparent;
+    border: none;
+  }
 }

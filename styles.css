@@ -87,6 +87,7 @@ a:active {
     text-align: left;
     padding-left: 25px;
     place-items: center;
+    max-block-size: 100%;
   }
   .about > .about__image:first-child {
     padding-top: 0;
@@ -94,9 +95,21 @@ a:active {
   .about__heading {
     font-family: Georgia, serif;
     font-size: 30px;
+    place-items: left;
+    float: left;
+    margin-right: 60px;
+    width: 60px;
+    height: 60px;
+    padding-bottom: 30px;
   }
   .about__image {
     place-items: center;
+    image-rendering: optimizeQuality;
+    padding: 200px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+    height: 70%;
+    width: 70%;
   }
   .projects__heading {
     font-family: Georgia, serif;
@@ -110,6 +123,8 @@ a:active {
   }
   .contact__text {
     text-align: center;
+    font-family: Georgia, serif;
+    font-size: 30px;
   }
   .technical {
     display: none;

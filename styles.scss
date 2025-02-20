@@ -186,20 +186,42 @@ a:active {
     }
     .technical {
         text-align: center;
-    }
-    .technical__skills {
-        padding-right: 10px;
-        width: 60px;
-        padding-bottom: 10px;
-        font-family: Georgia;
-        font-size: 35px;
-    }
-
+        padding: 2rem;
+    
+        &__skills { 
+        font-size: 1.8rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        }
+     }
+    
     .skills__icon {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }       
+        flex-wrap: wrap; // Allows wrapping to new lines if needed
+        justify-content: center; // Centers the icons
+        gap: 1.5rem; // Space between items
+        max-width: 800px; // Adjust based on design
+        margin: 0 auto;
+    
+        figure {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             text-align: center;
+             width: 80px; // Ensures a uniform size
+        }
+    
+        &__dim {
+            width: 50px;
+            height: auto;
+        }
+    
+        .skill__icon___caption {
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            color: #333;
+        }
+    }
     
     
 //     }

@@ -14,6 +14,9 @@ header {
     justify-content: space-between;//*spaced evenly, 1st item at start, last at end/
     list-style-type: none;
     text-align: center;
+    font-family: Georgia;
+    font-weight: 300;
+    font-size: 25px;
 }
 ul {
     list-style-type: none;
@@ -52,13 +55,8 @@ a:active {
     color: inherit;
     text-decoration: none;
 }
+//*finished hyperlink in header section/
 
-h1 {
-    text-align: center;
-}
-.title {
-    text-align: left;
-}
 //*mobile friendly version /
 @media only screen and (max-width: 600px) {
     body {
@@ -74,75 +72,164 @@ h1 {
     .title {
         display: block;
         text-align: left;
+        padding-left: 25px;
     }
+    .title__text {
+            text-align: center;
+            font-weight: 100;
+            font-size: 80px;
+            text-align: left;
+            padding-left: 20px;
+    }    
     .about {
        display: block;
-       flex-direction: column;
-    } 
-    .imageCarla {
-        display: block;
-        margin: auto;
+       text-align: left;
+       padding-left: 25px;
+       place-items: center;//*brought the img to center, however also brings the about hdg/ 
+       max-block-size: 100%;
+    }
+    .about > .about__image:first-child {
+        padding-top: 0; //*sets the image at top and i also moved the div in section at top/
+    }
+    .about__heading {
+        font-family: Georgia, serif;
+        font-size: 30px;
+        place-items: left;
+        float: left;
+        margin-right: 60px;
+        width: 60px;
+        height: 60px;
+        padding-bottom: 30px;
+    }
+    .about__image {
+        place-items: center;
+        image-rendering: optimizeQuality;
+        padding: 200px;
+        padding-top: 100px;
+        padding-bottom: 30px;
+        height: 70%;
+        width: 70%;
+    }
+    .projects__heading {
+        font-family: Georgia, serif;
+        font-size: 30px;
     }
     .contact {
         display: block;
         margin: auto;//*with the block disp prop above, centers the button/
+        background-color: transparent;
         border: none;
+    }
+    .contact__text {
+        text-align: center;
+        font-family: Georgia, serif;
+        font-size: 30px;
     }
     .technical {
         display: none;
     }
 }
-//* end of media properties/  
-.about {
-    box-sizing: border-box;
-    width: 100%;
-    float: left;
-    .text {
-        display: block;
-        float: inline-start;//*sets the image at the end of text/
-        align-items: stretch;
-        }
-    
-}
-.imageCarla {
-    float: right;
-    max-width: 300px;
-    height: auto;
- }
-.text {
-    width: 700px;
-    align-content: flex-end;
-    align-items: flex-start;
-}
-.technical {
-    text-align: left;
-    &__icon {
-        float: left;
-        width: 20%;
-        padding: 5px;
-        // @media only screen and (min-width: 601px) {
-        //     justify-content: space-around;
-        //     margin-left: 20px;
-        //     margin-right: 20px;
-        // }
-    }
-    &__dim {
-        height: 60px;
-        float: left;
-    }
-    &__caption {
-        display: flex;
-        justify-content: center;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 20px;
-        font-weight: 700;
-        margin-top: 20px;
-    }
-}
+//* end of mobile properties/
 
-.contact {
-    display: block;
-    margin: auto; //* centers content within contact/
-    background-color: transparent;
-    border: none;
+//* screens larger than mobile/
+@media only screen and (min-width: 601px) {
+    body {
+       padding: 60px;
+    }
+    .title {
+        display: block;
+        text-align: left;
+        max-width: 1200px;
+        padding-bottom: 60px;
+        padding-left: 350px;
+    }
+    .title__text {
+        text-align: center;
+        font-weight: 900;
+        font-size: 80px;
+        font-family: Georgia, serif;
+    }
+    .about {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        // justify-content:center;
+        align-items: stretch;
+        max-width: 2000px;
+        padding-bottom: 60px;
+        padding-top: 60px;
+    }
+    .about__heading {
+        padding-right: 10px;
+        width: 60px;
+        padding-bottom: 10px;
+        font-family: Georgia;
+        font-size: 35px; 
+    }
+    .about__text {
+        width: 1100px;
+        align-content: flex-end;
+        padding-left: 5px;
+        padding-top: 60px;
+        float: left;
+        order: 1;
+        font-size: 17px;
+    }
+    .about__image {
+        max-height: 900px;
+        max-width: 200px;
+        float: right;
+        padding-top: 130px;
+        padding-left: 100px;
+        padding-right: 100px;
+        order: 2;
+    }
+    .technical {
+        text-align: center;
+    }
+    .technical__skills {
+        padding-right: 10px;
+        width: 60px;
+        padding-bottom: 10px;
+        font-family: Georgia;
+        font-size: 35px;
+    }
+
+    .skills__icon {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }       
+    
+    
+//     }
+//     &__caption {
+//         display: flex;
+//         justify-content: center;
+//         font-family: Georgia, 'Times New Roman', Times, serif;
+//         font-size: 20px;
+//         font-weight: 700;
+//         margin-top: 20px;
+//     }
+//         padding-bottom: 60px;
+// }
+    .projects__heading {
+        padding-right: 10px;
+        width: 60px;
+        padding-bottom: 10px;
+        font-family: Georgia;
+        font-size: 35px;
+        }
+    .contact__text {
+        text-align: center;
+        padding-right: 10px;
+        font-family: Georgia;
+        font-size: 35px;
+    }
+    .contact {
+        display: block;
+        margin: auto; //* centers content within .contact/
+        background-color: transparent;
+        border: none;
+    }
 }

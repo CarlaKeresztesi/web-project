@@ -7,8 +7,19 @@ body {
     background-attachment: scroll; //*for the image to scroll with rest of page/
     font-style: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 80px;
 }
 header {
+    position: fixed; 
+    height: 60px;
+    line-height: 60px;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    z-index: 1000; 
+    padding: 15px 20px; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
     display: flex;
     flex-direction: row;
     justify-content: space-between;//*spaced evenly, 1st item at start, last at end/
@@ -110,7 +121,7 @@ a:active {
         height: 70%;
         width: 70%;
     }
-    .projects__heading {
+    .portfolio__heading {
         font-family: Georgia, serif;
         font-size: 30px;
     }
@@ -134,7 +145,7 @@ a:active {
 //* screens larger than mobile/
 @media only screen and (min-width: 601px) {
     body {
-       padding: 60px;
+       padding-top: 80px;
     }
     .title {
         display: block;
@@ -187,61 +198,67 @@ a:active {
     .technical {
         text-align: center;
         padding: 2rem;
-    
+        //font-size: ;
+   
         &__skills { 
-        font-size: 1.8rem;
+        font-size: 35px; //1.8rem;
+        padding-right: 10px;
         font-weight: bold;
-        margin-bottom: 1rem;
+        margin-bottom: 1rem; 
+        width: 60px;
+        padding-bottom: 10px;
+        font-family: Georgia;
+            
         }
      }
     
     .skills__icon {
         display: flex;
-        flex-wrap: wrap; // Allows wrapping to new lines if needed
-        justify-content: center; // Centers the icons
-        gap: 1.5rem; // Space between items
-        max-width: 800px; // Adjust based on design
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        max-width: 1000px; 
         margin: 0 auto;
-    
-        figure {
-             display: flex;
-             flex-direction: column;
-             align-items: center;
-             text-align: center;
-             width: auto; //80px; // Ensures a uniform size
+        
+        &--row {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
         }
-    
+
+        figure {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-width: 60px;
+        }
+
         &__dim {
             width: 50px;
-            height: auto;
+            height: 50px;
+            object-fit: contain;
         }
-    
+
         .skill__icon___caption {
             font-size: 0.9rem;
             margin-top: 0.5rem;
             color: #333;
         }
+                
     }
+       
     
-    
-//     }
-//     &__caption {
-//         display: flex;
-//         justify-content: center;
-//         font-family: Georgia, 'Times New Roman', Times, serif;
-//         font-size: 20px;
-//         font-weight: 700;
-//         margin-top: 20px;
-//     }
-//         padding-bottom: 60px;
-// }
-    .projects__heading {
+    .portfolio__heading {
         padding-right: 10px;
         width: 60px;
         padding-bottom: 10px;
         font-family: Georgia;
         font-size: 35px;
-        }
+    }
+
     .contact__text {
         text-align: center;
         padding-right: 10px;
@@ -254,4 +271,27 @@ a:active {
         background-color: transparent;
         border: none;
     }
+.footer {
+    ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-right: auto;
+            gap: 35px;
+        }
+    
+        ul li {
+            background-color: transparent;
+            border: 20px;
+            color: inherit;
+            display: flex;
+            justify-content: space-between;
+        }
+}
+
+
+
 }

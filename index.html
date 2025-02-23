@@ -5,161 +5,191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
     <title>Carla Keresztesi Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="name">
-            <h2>Carla Keresztesi</h2>
-        </div> 
-        <nav class="list">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href=mailto:carlakeresztesi@gmail.com>Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="title">
-            <h1 class="title__text">Full-Stack Engineer</h1>
-            <p>I am a detail-oriented Technologist with an educational background in Informatics and Mathematics. As an
-            airline trained pilot and a mother, I possess excellent organizational, communication skills and problem-solving
-            abilities. I am a human being who cares deeply about others and look forward to fostering the relationship between humans and
-            technology by leveraging a strategic blend of curiosity, work ethic, precision, care and reliability. My approach ensures the
-            delivery of thoughtful, value-driven solutions, with usability in mind, thus creating meaningful and engaging digital
-            experiences for diverse audiences. I align business objectives with user needs, reframing challenges into opportunities.</p>
-        </div>
-        <section id class="about">
-            <h3 class="about__heading">About</h3>  
-            <div class="about__image">
-                <a href="https://media.licdn.com/dms/image/v2/C4D03AQH0mzk7qPh-GA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1578485785866?e=1741824000&amp;v=beta&amp;t=pEvy1zHCX4p0haGzPi8hn7oCNMif8wVmNUcTbMKhlcA"></a>
-                <img class="about__Carla" src="https://media.licdn.com/dms/image/v2/C4D03AQH0mzk7qPh-GA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1578485785866?e=1741824000&amp;v=beta&amp;t=pEvy1zHCX4p0haGzPi8hn7oCNMif8wVmNUcTbMKhlcA" alt="Profile Picture">
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__brand">
+                <h1 class="header__name">Carla Keresztesi</h1>
             </div>
-            <div class="about__text">
-                <p class="text">Hello! My name is Carla. My biggest accomplishment to date is being a mother. I am also a safety-oriented airline trained pilot, firm advocate of
-            Crew Resource Management with a recent certification on Boeing 737-800. Possessor of a
-            solid training record – have passed all exams and proficiency checks on first attempt, scoring higher than 80% on each. I am multilingual (5 languages written and spoken), one of my qualities is my ease and ability of
-            adapting to multicultural environments and I also possess an aviation English language proficiency level 6 - expert in all areas (pronunciation, structure, vocabulary, fluency, comprehension,
-            interactions). <br><br>During my maternity career hiatus, I have developed an interest in psychology and obtained a level 2 Certificate in Children and Young People Mental Health. I maintain a keen interest towards the study of the human psyche. Through my corporate hospitality background, I have gained experience working under pressure, in client-facing roles as
-            well as team training and management. I am experienced in health and safety, fire safety, bomb threats.
+            <nav class="header__nav" aria-label="Main Navigation">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        
+        <section class="hero">
+            <div class="hero__container container">
+                <div class="hero__text">
+                    <h1 class="hero__title">Junior Software Engineer</h1>
+                </div>
+                <p class="hero__description">
+                    I am a Full-Stack Engineer who once navigated the skies as an Airline-Trained Pilot. With a Mathematics and
+                    Informatics background, my passion for technology began with C++ and Pascal. Fluent in five languages, I value human
+                    connection and have a passion for learning. Most importantly, I am a proud mother to a wonderful daughter.
                 </p>
             </div>
-            
         </section>
-        <section id class="technical">
-            <h3 class="technical__skills">Skills</h3>
-            <p>Key technical skills and tools I have learned to use through the intensive _nology training program:</p>
-            <div class="skills__icon">
-            <div class="skills__icon--row"> 
-                <figure>
-                    <img class="skills__icon__dim" src="./images/Git.svg"/>
-                    <figcaption class="skill__icon___caption">Git</figcaption>
-                </figure>
-                <figure>
-                    <img class="skills__icon__dim" src="./images/GitHub.svg"/>
-                    <figcaption class="skill__icon___caption">GitHub</figcaption>
-                </figure>
-                <figure>
-                    <img class="skills__icon__dim" src="./images/bash02-svgrepo-com.svg"/>
-                    <figcaption class="skill__icon___caption">Bash</figcaption>
-                </figure>
-                <figure>
-                    <img class="skills__icon__dim" src="./images/npm.svg"/>
-                    <figcaption class="skill__icon___caption">npm</figcaption>
-                </figure>
-                <figure>
-                    <img class="skills__icon__dim" src="./images/vs-code.svg"/>
-                    <figcaption class="skill__icon___caption">VSCode</figcaption>
-                </figure>
-                <figure>
-                    <img class="skills__icon__dim" src="./images/HTML5.svg"/>
-                    <figcaption class="skill__icon___caption">HTML</figcaption>
-                </figure>
-                <figure>
-                    <img class="skills__icon__dim" src="./images/CSS.svg"/>
-                    <figcaption class="skill__icon___caption">CSS</figcaption>
-                </figure>
-                <figure>
-                    <img class="skills__icon__dim" src="./images/SASS.svg"/>
-                    <figcaption class="skill__icon___caption">SASS</figcaption>
-                </figure>              
-                <figure>
-                    <img class="skills__icon__dim" src="./images/javascript.svg"/>
-                    <figcaption class="skill__icon___caption">JavaScript</figcaption>
-                </figure>
-            </div>
-            <div class="skills__icon--row">
-                <figure>
-                    <img class="skills__icon__dim" src="./images/typescript.svg"/>
-                    <figcaption class="skill__icon___caption">TypeScript</figcaption>
-                </figure>
-                <figure>
-                    <img class="skills__icon__dim" src="./images/Vite.svg"/>
-                    <figcaption class="skill__icon___caption">Vite</figcaption>
-                </figure>
-                <figure>
-                    <img class="skills__icon__dim" src="./images/vitest.svg"/>
-                    <figcaption class="skill__icon___caption">Vitest</figcaption>
-                </figure>
-                <figure>
-                    <img class="skills__icon__dim" src="./images/Cypress.svg"/>
-                    <figcaption class="skill__icon___caption">Cypress</figcaption>
-                </figure>
-                <figure>
-                    <img class="skills__icon__dim" src="./images/postman-svgrepo-com.svg"/>
-                    <figcaption class="skill__icon___caption">Postman</figcaption>
-                </figure>
-                <figure>
-                    <img class="skills__icon__dim" src="./images/java-svgrepo-com.svg"/>
-                    <figcaption class="skill__icon___caption">Java</figcaption>
-                </figure>
-                <figure>
-                    <img class="skills__icon__dim" src="./images/junit5-svgrepo-com.svg"/>
-                    <figcaption class="skill__icon___caption">JUnit</figcaption>
-                </figure>
-                <figure>
-                    <img class="skills__icon__dim" src="./images/mysql.svg"/>
-                    <figcaption class="skill__icon___caption">MySQL</figcaption>
-                </figure>
-            </div>
-            </div>
-        </section>
-        <section id class="portfolio">
-            <h3 class="portfolio__heading">Portfolio</h3>
-            
-            <figure>
-                <img class="" src="./images/playingCards.svg" width="300" height="300"/>
-                <figcaption class="tobeupdated">Snap - card game</figcaption>
-            </figure>
 
-            <figure>
-                <img class="" src="./images/map.svg" width="300" height="300"/>
-                <figcaption class="">Interactive Map game</figcaption>
-            </figure>
+        <section id="about" class="about">
+            <div class="about__container container">
+                <h2 class="about__heading">About me</h2>
+                <div class="about__content">
+                    <div class="about__image">
+                        <img src="./images/LinkedIn pic.jpeg"
+                            alt="Carla Keresztesi Profile Picture">
+                    </div>
+                    <div class="about__text">
+                        <p class="description">
+                           <p> Hello! I’m Carla — a proud mother, airline‐trained pilot, and lifelong learner who thrives on bridging people and
+                            technology. My background in aviation sharpened my decision‐making, systems knowledge, and automation skills, which
+                            translate beautifully into creating accessible, user‐friendly digital solutions.</p> <br>
+                            <p>
+                            As a software engineer I have managed to combine these strengths, constantly growing as I tackle new challenges. Whether
+                            I’m coding, flying a plane, or sharing a meal with friends, I’m all about collaboration, curiosity, and crafting
+                            meaningful experiences. </p> <br>
+                            <p>
+                            In my free time, you’ll find me reading, practicing yoga, or dancing, and I’m always ready for a refreshing swim or a
+                            hike in the great outdoors. I’m also passionate about cooking—especially chicken biryani! </p>
 
-            <p class="portfolio"> </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section id class="contact">
-            <h1 class="contact__text">Get in touch</h1>
-            <button class="contact"><a href="mailto:carlakeresztesi@gmail.com">Contact</button>
+
+        <section id="skills" class="skills">
+            <div class="skills__container container">
+                <h2 class="skills__heading">Skills</h2>
+                <p class="skills__description">Technical skills I’ve honed during my training with _nology:</p>
+                <div class="skills__icons">
+                    <div class="skills__row">
+                        <figure class="skill">
+                            <img src="./images/Git.svg" alt="Git" class="skill__icon">
+                            <figcaption class="skill__caption">Git</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/GitHub.svg" alt="GitHub" class="skill__icon">
+                            <figcaption class="skill__caption">GitHub</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/bash02-svgrepo-com.svg" alt="Bash" class="skill__icon">
+                            <figcaption class="skill__caption">Bash</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/npm.svg" alt="npm" class="skill__icon">
+                            <figcaption class="skill__caption">npm</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/vs-code.svg" alt="VSCode" class="skill__icon">
+                            <figcaption class="skill__caption">VSCode</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/HTML5.svg" alt="HTML" class="skill__icon">
+                            <figcaption class="skill__caption">HTML</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/CSS.svg" alt="CSS" class="skill__icon">
+                            <figcaption class="skill__caption">CSS</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/SASS.svg" alt="SASS" class="skill__icon">
+                            <figcaption class="skill__caption">SASS</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/bem-svgrepo-com.svg" alt="BEM" class="skill__icon">
+                            <figcaption class="skill__caption">BEM</figcaption>
+                        </figure>
+                    </div>
+                    <div class="skills__row">
+                        <figure class="skill">
+                            <img src="./images/javascript.svg" alt="JavaScript" class="skill__icon">
+                            <figcaption class="skill__caption">JavaScript</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/typescript.svg" alt="TypeScript" class="skill__icon">
+                            <figcaption class="skill__caption">TypeScript</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/Vite.svg" alt="Vite" class="skill__icon">
+                            <figcaption class="skill__caption">Vite</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/vitest.svg" alt="Vitest" class="skill__icon">
+                            <figcaption class="skill__caption">Vitest</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/Cypress.svg" alt="Cypress" class="skill__icon">
+                            <figcaption class="skill__caption">Cypress</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/postman-svgrepo-com.svg" alt="Postman" class="skill__icon">
+                            <figcaption class="skill__caption">Postman</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/java-svgrepo-com.svg" alt="Java" class="skill__icon">
+                            <figcaption class="skill__caption">Java</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/junit5-svgrepo-com.svg" alt="JUnit" class="skill__icon">
+                            <figcaption class="skill__caption">JUnit</figcaption>
+                        </figure>
+                        <figure class="skill">
+                            <img src="./images/mysql.svg" alt="MySQL" class="skill__icon">
+                            <figcaption class="skill__caption">MySQL</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <div class="portfolio__container container">
+                <h2 class="portfolio__heading">Portfolio</h2>
+                <div class="portfolio__grid">
+                    <figure class="portfolio__item">
+                        <img src="./images/playingCards.svg" alt="Snap - Card Game" class="portfolio__image">
+                        <figcaption class="portfolio__caption">Snap - Card Game</figcaption>
+                    </figure>
+                    <figure class="portfolio__item">
+                        <img src="./images/map.svg" alt="Interactive Map Game" class="portfolio__image">
+                        <figcaption class="portfolio__caption">Interactive Map Game</figcaption>
+                    </figure>
+                    <!-- add more portfolio items  -->
+                </div>
+            </div>
+        </section>
+
+    
+        <section id="contact" class="contact">
+            <div class="contact__container container">
+                <h2 class="contact__heading">Get in touch</h2>
+            
+                <div class="contact__links">
+                    <a href="mailto:carlakeresztesi@gmail.com" class="contact__link"><img src="./images/email-8-svgrepo-com.svg" width="45" height="45"></a>
+                    <a href="https://www.linkedin.com/in/carlakeresztesi/" target="_blank" rel="noopener"
+                        class="contact__link"><img src="./images/linkedin-svgrepo-com.svg" width="45" height="45"></a>
+                    <a href="https://github.com/CarlaKeresztesi" target="_blank" rel="noopener"
+                        class="contact__link"><img src="./images/github-svgrepo-com.svg" width="45" height="45"></a>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
-        <nav class="image">
-            <ul>
-                <li>
-                    <a href="https://www.linkedin.com/in/carlakeresztesi/">
-                        <img src="./images/linkedin-svgrepo-com.svg" width="55" height="55">
-                    </a>
-                </li>
-                <li>
-                     <a href="https://github.com/CarlaKeresztesi">
-                       <img src="./images/github-svgrepo-com.svg" width="55" height="55">
-                    </a>
-                </li>
-                <li> </li>
-            </ul>
-        </nav>
-    </footer>   
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <p class="footer__text">&copy; 2025 Carla Keresztesi Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
+
 </html>

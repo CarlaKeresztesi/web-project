@@ -180,9 +180,9 @@ body {
   position: relative;
 }
 .portfolio__image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
 }
 .portfolio__caption {
   margin-top: 0.5rem;

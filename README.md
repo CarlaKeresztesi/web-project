@@ -21,26 +21,26 @@
 
 To ensure a smooth development process, I followed these steps to set up and work with the project:
 
-**1️⃣ Install SASS Globally** (if not installed)
+**1️⃣ Installed SASS Globally**
 
-SCSS needs to be compiled into CSS before it can be used in the project. If you haven't installed SASS yet, run the following **Bash command**:
+SCSS needs to be compiled into CSS before it can be used in the project. Ran the following **Bash command**:
 
 ```
 npm install -g sass
 ```
 
-**2️⃣ Compile SCSS into CSS**
+**2️⃣ Compiled SCSS into CSS**
 
-Inside your project directory, run the following command to watch your SCSS files and automatically compile them into CSS:
+Inside my project directory, ran the following command to watch SCSS files and automatically compile them into CSS:
 
 ```
 sass --watch styles.scss styles.css
 ```
 
-This will generate a CSS file from SCSS and continuously watch for any changes.
+This generates a CSS file from SCSS and continuously watches for any changes.
 
-**3️⃣ Link the Compiled CSS in HTML**
-Ensure that your HTML file is linked to the compiled CSS file (not the SCSS file):
+**3️⃣ Linked the Compiled CSS in HTML**
+Ensured that the HTML file is linked to the compiled CSS file (not the SCSS file):
 
 ```
 <link rel="stylesheet" href="./styles.css">

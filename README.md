@@ -8,14 +8,14 @@
 
 ## ✨ Features:
 
--   **Fully responsive design** (mobile-first approach 📱➡️💻)
--   **Semantic HTML** for better structure and accessibility
--   Styled using **SCSS** with **BEM methodology** for maintainable **CSS**
--   **Flexbox** used for general layout and responsiveness
--   **CSS Grid** used to display portfolio projects in an organized way
--   Custom fonts imported via **Google Fonts API**
--   Deployed via **GitHub Pages** for easy access
--   Clean, readable, and well-organized code structure
+-   [x] **Fully responsive design** (mobile-first approach 📱➡️💻)
+-   [x] **Semantic HTML** for better structure and accessibility
+-   [x] Styled using **SCSS** with **BEM methodology** for maintainable **CSS**
+-   [x] **Flexbox** used for general layout and responsiveness
+-   [x] **CSS Grid** used to display portfolio projects in an organized way
+-   [x] Custom fonts imported via **Google Fonts API**
+-   [x] Deployed via **GitHub Pages** for easy access
+-   [x] Clean, readable, and well-organized code structure
 
 ## ✍️ Project Setup
 

@@ -1,6 +1,6 @@
 <h1 align="center">🌟🌐💻✈️ My Personal Portfolio 💡✍️🎨🌟</h1>
 
-&nbsp;&nbsp;&nbsp;&nbsp; Welcome to my personal portfolio! This project showcases some of my technical skills in a clean and modern design. Built with accessibility and responsiveness in mind, this site is designed to look great on all devices📱💻🎨✨
+&nbsp;&nbsp;&nbsp;&nbsp; Welcome to my personal portfolio! This project showcases some of my technical skills in a clean and modern design. Built with accessibility and responsiveness in mind, this site is designed to look great on all devices📱💻✨
 
 ## 📖 Overview
 

@@ -72,7 +72,7 @@ Ensured that the HTML file is linked to the compiled CSS file (not the SCSS file
 
 ## 🤝 Contributions and Feedback
 
-While this is a personal project, I’d love feedback and suggestions! Feel free to open an issue or reach out.
+While this is a personal project, I’d love feedback and suggestions! Feel free to open an issue or reach out🫳⌨️.
 
 ### 🙏 Thanks for stopping by,
 

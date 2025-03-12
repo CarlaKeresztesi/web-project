@@ -68,7 +68,7 @@ Ensured that the HTML file is linked to the compiled CSS file (not the SCSS file
 
 -   Enhancing user engagement by incorporating interactive elements using JavaScript, TypeScript, and other technologies I've learned.
 -   Optimizing performance for faster load times.
--   Deploying the Portfolio on my own domain for a more professional and personalized web presence.
+-   Deploying the Portfolio on my own domain for a more personalized web presence.
 
 ## 🤝 Contributions and Feedback
 
